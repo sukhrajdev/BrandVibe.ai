@@ -1,0 +1,43 @@
+teleport:
+  delay-seconds: 3
+  cancel-on-move: true
+
+arena:
+  auto-reset-interval-seconds: 600
+  reset-radius: 100
+  reset-batch-size: 150
+  default: spawn
+
+combat:
+  duration-seconds: 10
+  logout-penalty: true
+
+cooldowns:
+  kit-ms: 3000
+  teleport-ms: 2000
+  gui-click-ms: 250
+
+scoreboard:
+  enabled: true
+
+gui:
+  enabled: true
+
+kits:
+  default: crystal
+
+player:
+  join-protection-seconds: 4
+  void-y: -20
+  disable-hunger: true
+  disable-item-drops: true
+
+messages:
+  teleport-countdown: "<gold>Teleporting in <yellow>{seconds}</yellow>..."
+  teleport-cancelled-move: "<red>Teleport cancelled because you moved."
+  teleport-complete: "<green>Teleported."
+  combat-block: "<red>You cannot use this while in combat."
+  arena-reset: "<yellow>Arena cleanup started for <white>{arena}</white>."
+  kit-applied: "<green>Kit applied: <white>{kit}</white>"
+  kill-message: "<green>You eliminated <white>{victim}</white>"
+  death-message: "<red>You were eliminated by <white>{killer}</white>"
